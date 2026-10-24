@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#862747">
+  <title>Un jardín para Ferchis 🌷</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero" id="inicio">
+  <!-- REPRODUCTOR DE MÚSICA ARRIBA -->
+  <section class="panel center reproductor-arriba" id="canciones">
+    <h2>♫ Un rinconcito de música ♫</h2>
+
+    <label for="song">Escoge una canción</label>
+    <select id="song"></select>
+
+    <button class="button" id="play">
+      Reproducir música ♫
+    </button>
+
+    <audio id="player" controls></audio>
+  </section>
+
+
+    <nav>
+      <a href="#inicio">💗 Para mi Ferchis</a>
+      <div>
+        <a href="#cartas">Cartas</a>
+        <a href="#juego">Nuestro juego</a>
+        <a href="#canciones">Canciones</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="flowers">💐 🌹 🌷</div>
+      <small>UN JARDÍN HECHO ESPECIALMENTE PARA TI</small>
+      <h1>MI AMOR, MI MUNDO ENTERO</h1>
+      <div class="heart">♡</div>
+      <p>“No es solo lo bonito de ti, es todo lo que haces sentir en mi vida”.</p>
+      <p>Gracias por existir, por ser tú y por hacer mis días más bonitos.</p>
+      <p><i>Con todo mi cariño,<br>tu Vampi ♡</i></p>
+      <a class="button pale" href="#cartas">Entra a nuestro jardín ♡</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" id="cartas">
+      <h2>🌷 Lo que guardo en mi corazón 🌹</h2>
+      <p class="intro">
+        Hay sentimientos que a veces cuesta explicar, pero que merecen
+        encontrar un lugar donde convertirse en palabras.
+      </p>
+
+      <div class="letters">
+        <article>
+          <span class="letter-icon">🌷</span>
+          <h3>Lo que siento por ti</h3>
+          <p>
+            Mi niña, desde que llegaste a mi vida, hay momentos sencillos
+            que tienen un significado diferente porque puedo compartirlos
+            contigo. Me gusta conocerte poquito a poquito, descubrir tus
+            ocurrencias, tus gustos y esos detalles que te hacen ser tú.
+            Quiero escucharte también cuando estés cansada o no encuentres
+            las palabras. No tienes que fingir estar bien conmigo.
+            Tus sentimientos importan y quiero demostrártelo con paciencia,
+            respeto y hechos. Gracias por ser tú, Ferchis. ♡
+          </p>
+        </article>
+
+        <article>
+          <span class="letter-icon">💐</span>
+          <h3>Quiero que te sientas segura</h3>
+          <p>
+            Mi Ferchis, no tienes que ser perfecta para merecer cariño.
+            Puedes tener días malos, necesitar espacio o simplemente no
+            saber qué decir. Si alguna vez mis palabras te lastiman, quiero
+            escucharte, reconocer lo que hice y esforzarme por hacerlo mejor.
+            Quiero que lo nuestro se sienta tranquilo, que puedas expresar
+            lo que piensas sin miedo y que tus límites sean respetados.
+            Quiero que te sientas escuchada, valorada y libre de ser tú misma.
+            🌷
+          </p>
+        </article>
+
+        <article>
+          <span class="letter-icon">🌅</span>
+          <h3>Gracias por llegar a mi vida</h3>
+          <p>
+             Me da ilusión pensar en
+            todo lo que hemos descubierto y en lo que todavía nos queda
+            por aprender. Gracias por cada conversación, cada risa y cada
+            detalle que se ha convertido en un recuerdo bonito. No quiero
+            que nuestra historia se sostenga solamente en promesas:
+            quiero que crezca con sinceridad, respeto y acciones.
+            Me hace el mas feliz poder llamarte mi novia. 💗
+          </p>
+        </article>
+
+        <article>
+          <span class="letter-icon">🌹</span>
+          <h3>Mi lugar favorito eres tú</h3>
+          <p>
+            No deseo que nunca tengamos diferencias; deseo que podamos
+            hablar cuando algo nos duela, pedir perdón y aprender de lo
+            sucedido. Quiero conocer tus sueños, escuchar tus historias
+            y descubrir qué cosas te hacen sentir en paz. Quiero que
+            tengamos recuerdos sencillos: una canción, una tarde tranquila,
+            una plática que se alargó o unas flores que te recuerden que
+            pensé en ti. Lo sencillo también puede ser precioso. 🌹
+          </p>
+        </article>
+
+        <article>
+          <span class="letter-icon">💌</span>
+          <h3>Como siempre, tú</h3>
+          <p>
+            Mi lechuzina, mi minion, mi Ferchis: detrás de estas palabras
+            hay alguien que quiere seguir aprendiendo a quererte bonito.
+            Me ilusiona seguir creando recuerdos contigo.
+            Las rosas pueden marchitarse y los tulipanes perder sus pétalos,
+            pero este jardín quiere recordarte que hice algo pensando en ti.
+            Te Amo con toda mi alma, Corazon. Con cariño, tu Vampi. ♡
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel pink" id="juego">
+      <h2>♡ Un pequeño juego para ti ♡</h2>
+      <p class="intro">
+        Contesta nueve preguntitas y después llegará la más especial: 🥹💌
+      </p>
+
+      <div id="quiz">
+        <p id="progress">Pregunta 1 de 9</p>
+        <h3 id="question"></h3>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div id="giftStep" hidden>
+        <p class="progress-label">Pregunta 10 de 10 · Elige tu regalo 🎁</p>
+        <h3>¿Cuál de estos detallitos te haría ilusión, mi niña?</h3>
+        <p>Elige tu favorito. ♡</p>
+
+        <div class="gifts">
+          <button class="gift" data-gift="Pulsera Mágica de Tulipanes Ajustable- Chapada en Oro 18K"
+            data-image="regalos/Tulipanes.png">
+            <img src="regalos/Tulipanes.png"
+              alt="Rosas y tulipanes" onerror="this.style.display='none'">
+              Pulsera Mágica de Tulipanes Ajustable- Chapada en Oro 18K
+          </button>
+
+          <button class="gift" data-gift="Pulsera Mágica de Girasoles- Chapado Oro 18K"
+            data-image="regalos/Girasoles.png">
+            <img src="regalos/Girasoles.png" alt="Carta especial"
+              onerror="this.style.display='none'">
+            Pulsera Mágica de Girasoles- Chapado Oro 18K
+          </button>
+
+          <button class="gift" data-gift="Ramo de flores"
+            data-image="regalos/Ramo_flores.png">
+            <img src="regalos/Ramo_flores.png" alt="Peluche"
+              onerror="this.style.display='none'">
+              Ramo de flores
+          </button>
+
+          <button class="gift" data-gift="Anillo de promesa"
+            data-image="regalos/Anillo_promesa.png">
+            <img src="regalos/Anillo_promesa.png" alt="Chocolates"
+              onerror="this.style.display='none'">
+              Anillo de promesa
+          </button>
+
+          <button class="gift" data-gift="Peluche"
+            data-image="regalos/peluche.jpg">
+            <img src="regalos/peluche.jpg" alt="Cita sorpresa"
+              onerror="this.style.display='none'">
+              Peluche
+          </button>
+        </div>
+
+        <div id="locationStep" hidden>
+          <h3>¿En qué ubicación lo quieres, mi niña? 📍🌷</h3>
+          <p>Elegiste: <strong id="chosenGift"></strong></p>
+          <img id="chosenImage" class="chosen-image" alt="Regalo elegido">
+
+          <label for="location">¿En qué lugar te gustaría recibirlo?</label>
+          <input id="location" type="text"
+            placeholder="Un parque, una cafetería, etc.">
+
+          <label for="photos">Agrega hasta 5 imágenes de referencia 📸</label>
+          <input id="photos" type="file" accept="image/*" multiple>
+          <p class="note">
+            Las fotos se muestran en este navegador; no se envían
+            automáticamente.
+          </p>
+          <div id="preview" class="preview"></div>
+
+          <button class="button" id="finish">
+            Terminar y ver mi sorpresa ♡
+          </button>
+        </div>
+
+        <p id="feedback" aria-live="polite"></p>
+        <button class="button" id="share" hidden>
+          Copiar mis respuestas ♡
+        </button>
+      </div>
+    </section>
+
+<section class="panel center">
+  <h2>Una promesa sencilla para nosotros ♡</h2>
+
+  <p id="teaser">
+    Mi niña preciosa Ferchis, si hay algo que deseo de corazón, es que nunca
+    tengas que preguntarte si eres importante para mí. Quiero que
+    puedas sentirlo en mis palabras, en mis detalles y, sobre todo,
+    en la manera en que te trato cada día. No puedo prometerte una
+    historia perfecta, porque sé que los dos podemos equivocarnos,
+    tener días difíciles y no encontrar siempre las palabras
+    correctas; pero sí puedo decirte que quiero seguir aprendiendo
+    a amarte de una manera más bonita, más sincera y más consciente.
+    Quiero que conmigo puedas ser tú misma, sin esconder tus
+    sentimientos, sin tener que fingir una sonrisa cuando algo te
+    duele y sin sentir que tus preocupaciones son demasiado para mí.
+    Quiero escucharte con el corazón, abrazar con mis palabras
+    aquellos días en los que necesites consuelo y recordarte, incluso
+    en los momentos más sencillos, lo especial que eres para mí.
+    Porque tú, mi niña, no eres alguien que llegó a mi vida para
+    ocupar un ratito de mis días; eres una personita con la que me
+    ilusiona compartir momentos, descubrir cosas nuevas y construir
+    recuerdos que algún día podamos mirar con una sonrisa. Y si
+    pudiera pedir algo para nosotros, pediría que nunca nos falten
+    las ganas de comprendernos, la paciencia para aprender y el
+    cariño para elegirnos libremente, una y otra vez. ♡
+  </p>
+    
+    <p>
+      Mi preciosa Ferchis, mi niña bonita, mi lechuzina, mi minion,
+      quiero que leas estas palabras despacito, como si cada una
+      fuera una pequeña flor que he elegido especialmente para ti.
+      No quiero que esta carta sea solamente algo bonito que leas
+      una vez y después olvides. Quiero que sea uno de esos pequeños
+      rinconcitos a los que puedas volver cuando quieras recordar
+      lo mucho que significas para mí y lo feliz que me hace tener
+      la oportunidad de compartir esta etapa de mi vida contigo.
+      A veces siento que hay tantas cosas que quisiera decirte que
+      las palabras se me quedan pequeñas. Quisiera explicarte todo
+      lo que me haces sentir, lo bonito que es pensar en ti y la
+      ilusión que me da saber que, entre tantas personas en el mundo,
+      nuestros caminos se encontraron y tuvimos la oportunidad de
+      conocernos de una manera tan especial.
+    </p>
+
+    <p>
+      Puede que para otras personas
+      el tiempo se mida solamente en días o meses, pero para mí
+      también se mide en todas esas pequeñas cosas que hemos ido
+      descubriendo el uno del otro. En las conversaciones que nos
+      han permitido acercarnos, en las risas que hemos compartido,
+      en las cosas que me has contado y en cada oportunidad que
+      he tenido de conocer un poquito más de la persona tan bonita
+      que eres. Me emociona pensar que todavía hay muchísimas cosas
+      de ti que me faltan por conocer, canciones que quizá algún
+      día me dediques, historias que todavía no me has contado,
+      sueños que quiero escuchar de tus propios labios y momentos
+      que aún no hemos vivido. No necesito conocer todo de ti de
+      inmediato; me gusta pensar que podemos seguir descubriéndonos
+      poquito a poquito, con paciencia, cariño y sinceridad.
+    </p>
+
+    <p>
+      Quiero que sepas algo, mi niña: no tienes que ser fuerte
+      todo el tiempo. No tienes que tener una respuesta para todo,
+      solucionar cada problema tú solita ni encontrar siempre la
+      manera correcta de explicar lo que sientes. Eres humana,
+      tienes tus propios pensamientos, tus preocupaciones, tus
+      ilusiones y tus días difíciles, y todo eso forma parte de ti.
+      No quiero que sientas que debes ocultarme lo que te pasa
+      para protegerme de tus sentimientos o para evitar que me
+      preocupe. Me gustaría que pudiéramos aprender a hablar de
+      las cosas que nos pesan, sin sentir que debemos competir
+      por quién está peor ni cargar con todo en silencio.
+      Quiero escucharte, preguntarte qué necesitas y respetar
+      si en algún momento prefieres tener un poquito de espacio.
+      No siempre voy a saber qué decirte, y quizá algunas veces
+      me equivoque al intentar comprenderte, pero quiero tener
+      la disposición de escucharte de nuevo y aprender de ti.
+      Porque tus sentimientos importan, mi Ferchis, y quiero
+      tratarlos con el cuidado y el respeto que merecen.
+    </p>
+
+    <p>
+      También quiero que conmigo puedas sentirte libre de ser tú.
+      Que puedas contarme tus ocurrencias, hablarme de las cosas
+      que te emocionan, compartir tus canciones favoritas y
+      contarme incluso esas pequeñas cosas que quizá para alguien
+      más parezcan insignificantes. Quiero conocer tanto tus
+      sonrisas como tus silencios, tus sueños más grandes y esas
+      pequeñas ilusiones que guardas para ti. Quiero que podamos
+      tener conversaciones profundas, pero también hablar de
+      cualquier tontería y terminar riéndonos por algo que ni
+      siquiera nosotros entendamos. Quiero que lo nuestro tenga
+      espacio para la ternura, para las bromas, para la tranquilidad
+      y para esos momentos sencillos que, sin hacer demasiado ruido,
+      terminan convirtiéndose en recuerdos preciosos.
+    </p>
+
+    <p>
+      Mi niña, sé que decir cosas bonitas es fácil cuando todo
+      está bien, pero también sé que el cariño necesita demostrarse
+      cuando aparecen los desacuerdos. Por eso no quiero prometerte
+      que jamás voy a equivocarme, porque no sería justo contigo.
+      Lo que quiero es aprender a reconocer mis errores, escucharte
+      cuando algo te lastime y no minimizar lo que sientes solo
+      porque yo lo haya vivido de otra manera. Quiero aprender
+      a pensar antes de hablar, a expresarme con más cuidado y
+      a recordar que las palabras pueden quedarse en el corazón
+      de una persona mucho más tiempo del que imaginamos.
+      Si alguna vez te hago sentir triste, quiero tener la humildad
+      de escucharte y la voluntad de mejorar. No quiero pedirte
+      que creas en mí solamente porque te digo que voy a cambiar;
+      quiero que, con el tiempo, puedas ver en mis acciones que
+      estoy tomando en serio aquello que necesito aprender.
+      Para mí, quererte también significa hacerme responsable
+      de la manera en que te trato.
+    </p>
+
+    <p>
+      Quiero que nuestra relación sea un lugar bonito para los dos.
+      Un lugar donde podamos decir lo que pensamos sin miedo a
+      que una diferencia se convierta en una batalla, donde podamos
+      reconocer nuestras emociones sin lastimarnos y donde pedir
+      perdón no sea solamente una manera de terminar una discusión,
+      sino el comienzo de una oportunidad para hacerlo mejor.
+      Quiero aprender a comprender tu manera de ver el mundo,
+      incluso cuando sea diferente de la mía.
+       No quiero que sientas que debes dejar
+      de ser tú para demostrarme cariño; quiero que puedas crecer,
+      descubrir cosas nuevas y perseguir lo que te hace feliz,
+      sabiendo que una relación bonita también necesita libertad,
+      confianza y respeto.
+    </p>
+
+    <p>
+      Si pudiera regalarte algo que no se marchitara con el tiempo,
+      te regalaría la certeza de que mereces recibir cariño sin
+      tener que ganártelo siendo perfecta. Mereces que te escuchen
+      cuando hablas, que respeten tus límites, que tomen en serio
+      tus sentimientos y que celebren tus alegrías sin hacerte
+      sentir que son pequeñas. Mereces tener días en los que puedas
+      descansar, equivocarte, volver a intentarlo y aprender sin
+      que eso te haga sentir menos valiosa. Y aunque yo no puedo
+      resolver todo mi amor, sí quiero
+      aprender a acompañarte de una manera que te haga bien,
+      sin presionarte a hablar cuando no estés preparada y sin
+      hacerte sentir que debes estar bien para que yo pueda quererte.
+      Quiero recordarte que no necesitas demostrarme nada para
+      merecer respeto y ternura. Para mí, eres una persona con
+      sentimientos, sueños y una historia propia que merece ser
+      escuchada con atención.
+    </p>
+
+    <p>
+      Hay veces en las que imagino todos esos pequeños momentos
+      que todavía podríamos compartir. Imagino una tarde contigo,
+      una caminata sin prisa, el cielo pintándose de colores al
+      atardecer, una canción sonando mientras conversamos y una
+      sonrisa tuya apareciendo por cualquier tontería que diga.
+      Imagino entregarte unas flores y observar esa emoción tan
+      bonita que puede provocar un detalle sencillo cuando se
+      da de corazón. Imagino escribirte cartas que algún día
+      puedas volver a leer, guardar fotografías de momentos
+      especiales y descubrir lugares que después se conviertan
+      en parte de nuestras historias. No necesito que todos
+      nuestros días sean extraordinarios; me ilusiona que incluso
+      los días normales puedan tener algo bonito porque elegimos
+      compartirlos. Quiero seguir creando recuerdos contigo,
+      no para vivir esperando el futuro, sino para disfrutar
+      de cada paso que demos y agradecer las oportunidades
+      que tengamos de conocernos mejor.
+    </p>
+
+    <p>
+      Gracias por permitirme ser parte de tu vida, Ferchis.
+      Gracias por cada conversación, por los momentos en los
+      que hemos podido reír, por las cosas que me has compartido
+      y por darme la oportunidad de conocer más de ti. No quiero
+      dar por hecho tu tiempo, tu confianza ni tus detalles.
+      Quiero aprender a valorarlos y demostrarte que los recibo
+      con cariño. Sé que una relación no se construye únicamente
+      con agradecimientos, cartas o regalos; se construye con
+      la forma en que nos tratamos cuando nadie más está mirando,
+      con la sinceridad de nuestras conversaciones y con el
+      esfuerzo que hacemos para que ambos podamos sentirnos
+      respetados. Por eso quiero que esta página sea un detalle
+      bonito, pero también un recordatorio para mí: el cariño
+      que siento por ti merece reflejarse en lo que hago,
+      no quedarse guardado solamente en lo que escribo.
+    </p>
+
+    <p>
+      Mi Ferchis, mi niña bonita, si algún día vuelves a esta
+      página y lees estas palabras, quiero que recuerdes que
+      las escribí pensando en ti y en todo lo bonito que deseo
+      construir contigo. No porque espere que todo sea perfecto,
+      ni porque quiera que nunca tengamos días difíciles, sino
+      porque me ilusiona que podamos aprender a atravesarlos
+      con respeto, paciencia y sinceridad. Quiero que podamos
+      celebrar las cosas buenas, hablar de las que nos preocupan
+      y reconocer que los dos merecemos una relación en la que
+      podamos crecer sin dejar de ser nosotros mismos.
+      Quiero seguir conociéndote, seguir descubriendo tus gustos,
+      seguir escuchando tus historias y seguir encontrando
+      motivos para decirte que me alegra tenerte en mi vida.
+      Ojalá nos queden muchas canciones por compartir, muchas
+      risas por escuchar, muchas flores por regalar y muchos
+      recuerdos por guardar con cariño.
+    </p>
+
+    <p>
+      Y si tuviera que resumir todo lo que quiero prometerte
+      en unas pocas palabras, sería esto: quiero esforzarme
+      por quererte bien. Quiero escucharte con atención,
+      hablarte con ternura, respetarte incluso cuando pensemos
+      diferente y demostrarte con hechos que tus sentimientos
+      son importantes para mí. Quiero que podamos elegirnos
+      con libertad, no por miedo a estar solos, sino porque
+      encontramos algo bonito en compartir nuestras vidas.
+    </p>
+
+    <p>
+      Te Amo con toda mi alma, mi prinsecha hermosha asi te gusta que lo diga jajaja.
+      Gracias por formar parte de esta historia que apenas
+      empieza. Ojalá podamos seguir escribiéndola a nuestro
+      ritmo, aprendiendo juntos y cuidando aquello que estamos
+      construyendo. Y cuando veas estas flores, esta página
+      o estas palabras, espero que encuentres en ellas un
+      poquito del cariño con el que las preparé para ti.
+      y si llegaste hasta aqui mi vida entera quiero que me llames y me digas todo lo que piensas de esto.
+    </p>
+
+    <p>
+      Con todo mi cariño, para mi niña, mi lechuzina,
+      mi minion, mi Ferchis. ♡
+    </p>
+
+    <p class="signature">
+      Siempre con cariño,<br>
+      tu Vampi. ♡
+    </p>
+</section>
+</section>
+  </main>
+
+  <footer>
+    🌷 Y aún faltan muchas más historias por escribir... ♡
+    <br><small>Para ti, Ferchis · Con cariño, Vampi</small>
+  </footer>
+</body>
+</html>
+
+
